@@ -5,10 +5,10 @@
   <div class="header">
     <ul>
       <li class="routerItem">
-        <router-link to="/Center" style="color:white">center</router-link>
+        <router-link to="/Center" style="color:white">中间</router-link>
       </li>
       <li class="routerItem">
-        <router-link to="/BottomLeft" style="color:white">corner</router-link>
+        <router-link to="/BottomLeft" style="color:white">左下角</router-link>
       </li>
       <li class="routerItem">
         <router-link to="/BottomRight" style="color:white">右下角</router-link>

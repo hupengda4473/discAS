@@ -191,7 +191,7 @@ let animationEnd = () => {
 let changeShowItem = () => {
   setTimeout(()=>{
     emit('showItemChange', props.index)
-  },200);
+  },0);
 }
 
 let toRadians = angle => {

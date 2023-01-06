@@ -6,17 +6,26 @@
 ### 实例效果演示
 
 1. 点击menu的button之后的效果
-   ![菜单menu点击演示](./doc/img/pic_1.gif)
 
-2. 点击item之后的效果
+![菜单menu点击演示](./doc/img/pic_1.gif)
 
-![点击item之后的效果](./doc/img/pic2.gif)
+2. 点击空白处（menu之外）之后的效果
 
-3.left corner
+![点击空白](./doc/img/pic_2.gif)
 
-![left corner](./doc/img/pic_3.gif)
+3. 点击item之后的效果
 
-4.加上vue-router之后的menu(pending)
+![点击item之后的效果](./doc/img/pic_3.gif)
+
+4.左下角
+
+![左下角](./doc/img/pic_4.gif)
+
+5.右下角
+
+![右下角](./doc/img/pic_5.gif)
+
+6.加上vue-router之后的menu(pending)
 
 ### get started
 ----
@@ -81,8 +90,8 @@
          }
 
 
-##### 跳过动画关闭菜单
-      menv.vue
+##### 跳过动画关闭菜单(选择item后button立即旋转归为)
+###### menu.vue
          let animationCountIncrease = val => {
             //注释掉animationCountIncrease里所有代码
             //count.value++
@@ -97,16 +106,30 @@
             currentIndex.value = index
             emit('selectItem', index);
          }
+![跳过动画关闭菜单](./doc/img/pic_6.gif)  
 
 ##### 点击item碎片特效
-      item.vue
+###### item.vue
          .item-btn注释的样式打开即可
 
          /*&::before
         position absolute
         ...
         background-position 18% 40%, 20% 31%, 30% 30%, 40% 30%, 50% 30%, 57% 30%, 65% 30%, 80% 32%, 15% 60%,83% 60%, 18% 70%, 25% 70%, 41% 70%, 50% 70%, 64% 70%, 80% 71%*/
+        
 
+        建议将changeShowItem 里定时器改为200可以更好看到碎片效果
+        let changeShowItem = () => {
+            setTimeout(()=>{
+                emit('showItemChange', props.index)
+            },200);
+        }
+
+##### 温馨提示
+        其中 跳过动画关闭菜单 和 点击item碎片特效 可一起开始使用，也可单独使用，具体使用可自行调试  
+
+
+![碎片特效](./doc/img/pic_7.gif)
 
 有问题请邮件联系我，email:295562365@qq.com
 
