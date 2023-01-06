@@ -89,7 +89,7 @@
          }
 
 
-##### 跳过动画关闭菜单(选择item后button立即旋转归为)
+##### 跳过动画关闭菜单(选择item后button立即旋转归位)
 ###### menu.vue
          let animationCountIncrease = val => {
             //注释掉animationCountIncrease里所有代码
