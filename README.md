@@ -1,7 +1,6 @@
 
 ## 技术栈:vue+vue-router+vite
 
-#### [在线演示地址](https://mingseng-w.github.io/vue-bloom-menu/)
 ----
 
 ### 实例效果演示
@@ -21,7 +20,7 @@
 
 ### get started
 ----
-* 	git clone https://github.com/MingSeng-W/vue-bloom-menu.git
+* 	git clone https://github.com/hupengda4473/discAS.git
 *  npm install
 *  npm run dev
 *  之后访问浏览器的8080端口，可以看到项目跑起来了(now please check the port 8080 in your browser, you will see the menu in the page)
