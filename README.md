@@ -17,11 +17,11 @@
 
 ![点击item之后的效果](./doc/img/pic_3.gif)
 
-4.左下角
+4. 左下角
 
 ![左下角](./doc/img/pic_4.gif)
 
-5.右下角
+5. 右下角
 
 ![右下角](./doc/img/pic_5.gif)
 
@@ -37,8 +37,7 @@
 ### usage
 -----
 
-##### 配置参数
-	1. 	配置参数(默认有缺省值)
+##### 配置参数(默认有缺省值)
 		*  radius：default为100px,item距离menu的button的距离
 		*  startAngle:defaut为0,item开始的角度，以时钟3点钟方向记为0，然后顺时针方向为递增方向
 		*  endAngle:default为315,最后一个item的角度
